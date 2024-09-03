@@ -1,0 +1,585 @@
+/* Existing styles from your style.css */
+
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#home{
+    margin-bottom: 100px;
+}
+
+.wrapper {
+    width: 1350px;
+    margin: auto;
+    position: relative;
+    padding: 0px 200px 0 200px;
+}
+
+.logo a {
+    font-size: 50px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #D1512D;
+}
+
+.logo span {
+    color: #411530;
+}
+
+.menu {
+    float: right;
+    display: flex;
+    align-items: center; /* Vertically center the contents of .menu */
+    height: 80px; /* Match the height of the navbar for perfect centering */
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    margin-bottom: 5px;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: #411530;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+#satu {
+    background-color: #F5C7A9;
+    padding-top: 40px;
+    margin-bottom: -50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+
+.kolom p {
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #D1512D;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #D1512D;
+}
+
+a.tbl-ungu {
+    background: #411530;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+a.tbl-ungu:hover {
+    background: #D1512D;
+    color: #411530;
+    text-decoration: none;
+}
+
+.jarak {
+    margin-top: 100px;
+    display: inline-block;
+}
+
+.reset {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.tutor-list {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.kartu-tutor {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-tutor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.kartu-tutor p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #411530;
+}
+
+.section-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #D1512D; /* Choose a color that matches your theme */
+    margin: 50px auto; /* Center the divider with spacing above and below */
+    border-radius: 2px; /* Add rounded corners */
+}
+
+.shape2 {
+    margin-bottom: -150px;
+}
+
+.partner-list {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex: wrap;
+}
+
+.kartu-partner {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.kartu-partner img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#contact {
+    background: #888484;
+    padding: 50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: "Consolas";
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 0px;
+}
+
+#courses {
+    border-radius: 73px;
+    background: #F5C7A9;
+    box-shadow: 20px 20px 64px #d0a990,
+        -20px -20px 64px #ffe5c2;
+    padding: 25px;
+    margin-top: 150px;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: black;
+}
+
+.preloader .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font: 14px arial;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fcf;
+    border-color: #fcf transparent #fcf transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 20; /* Ensure the hamburger is always on top */
+    margin-top: 5px; /* Adjust the top margin as needed */
+}
+
+.hamburger span {
+    width: 100%;
+    height: 3px;
+    background: #411530;
+    transition: all 0.3s ease;
+}
+
+/* Existing styles from your style.css */
+
+/* Style for social media icons */
+.social-icon {
+    color: #411530; /* Set color for the social icons */
+    font-size: 18px; /* Adjust icon size */
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.social-icon i {
+    margin-right: 8px; /* Space between the icon and the text */
+}
+
+.social-icon:hover {
+    color: #D1512D; /* Change color on hover */
+}
+
+
+/* Responsive Design */
+
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .logo a {
+        font-size: 40px;
+    }
+
+    nav ul li {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .kolom {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tutor-list {
+        flex-direction: column;
+    }
+
+    .kartu-tutor, .kartu-partner {
+        width: 60%;
+    }
+
+    .kartu-tutor img, .kartu-partner img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    a.tbl-ungu {
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .wrapper {
+        padding: 0 100px;
+    }
+
+    .logo a {
+        font-size: 36px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul li {
+        float: none;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+
+    /* Optional: Aktifkan menu hamburger jika diperlukan */
+    
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .tutor-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kartu-tutor {
+        width: calc(50% - 10px); /* Dua kartu per baris, masing-masing mengambil setengah lebar dikurangi margin */
+        margin-bottom: 20px; /* Tambahkan margin bawah untuk spasi antar baris */
+        box-sizing: border-box;
+    }
+
+    .kartu-tutor img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .kartu-tutor p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Layout untuk kartu partner */
+    .partner-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .kartu-partner {
+        width: calc(33.33% - 10px); /* Tiga kartu per baris */
+        margin-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    .kartu-partner img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        max-width: 150px; /* Batasi ukuran gambar agar tidak terlalu besar */
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer sections vertically */
+        text-align: center; /* Center align text in each footer section */
+    }
+
+    .footer-section {
+        width: 100%; /* Make each footer section take up full width */
+        margin-bottom: 20px; /* Add some space between sections */
+    }
+
+    #copyright {
+        text-align: center;
+        padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+
+    .partner-list {
+        flex-direction: column; /* Stack partner cards vertically */
+        align-items: center; /* Center align the cards */
+    }
+
+    .kartu-partner {
+        width: 80%; /* Make each partner card take up 80% of the container's width */
+        margin-bottom: 20px; /* Add some space below each card */
+    }
+
+    .kartu-partner img {
+        width: 75%; /* Ensure the image takes up the full width of the card */
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .logo a {
+        font-size: 24px;
+    }
+
+    nav {
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .kartu-tutor, .kartu-partner {
+        width: 100%;
+    }
+
+    .footer-section h3 {
+        font-size: 24px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+}
