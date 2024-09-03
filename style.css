@@ -7,9 +7,14 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,10 +23,12 @@ body {
 }
 
 .wrapper {
-    width: 1350px;
+    width: 100%; /* Adjust to 100% to prevent overflow */
+    max-width: 1350px; /* Ensure max width */
     margin: auto;
     position: relative;
     padding: 0px 200px 0 200px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .logo a {
@@ -53,6 +60,7 @@ nav {
     background: #ffffff;
     margin-bottom: 5px;
     z-index: 10;
+    box-sizing: border-box; /* Ensure padding/margin doesn't cause overflow */
 }
 
 nav ul {
@@ -82,6 +90,8 @@ section {
     margin: auto;
     display: flex;
     margin-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box; /* Ensure no overflow due to section margin/padding */
 }
 
 #satu {
@@ -94,6 +104,7 @@ section {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 60px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
 }
 
 .kolom p {
@@ -153,6 +164,7 @@ a.tbl-ungu:hover {
     width: 100%;
     position: relative;
     flex-wrap: wrap;
+    justify-content: space-between; /* Space out items evenly */
 }
 
 .kartu-tutor {
@@ -189,7 +201,8 @@ a.tbl-ungu:hover {
     width: 100%;
     position: relative;
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap; /* Ensure elements wrap */
+    justify-content: space-between; /* Space out partner cards */
 }
 
 .kartu-partner {
@@ -214,6 +227,7 @@ a.tbl-ungu:hover {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    box-sizing: border-box; /* Ensure no overflow due to margin/padding */
 }
 
 .footer-section {
@@ -244,7 +258,8 @@ h3 {
     box-shadow: 20px 20px 64px #d0a990,
         -20px -20px 64px #ffe5c2;
     padding: 25px;
-    margin-top: 150px;
+    margin-top: 100px;
+    box-sizing: border-box; /* Prevent padding from causing overflow */
 }
 
 .preloader {
@@ -311,8 +326,6 @@ h3 {
     transition: all 0.3s ease;
 }
 
-/* Existing styles from your style.css */
-
 /* Style for social media icons */
 .social-icon {
     color: #411530; /* Set color for the social icons */
@@ -328,6 +341,33 @@ h3 {
 
 .social-icon:hover {
     color: #D1512D; /* Change color on hover */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #411530;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    z-index: 100;
+    display: none; /* Initially hidden */
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #D1512D;
+}
+
+#back-to-top i {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -417,6 +457,18 @@ h3 {
     
     .hamburger {
         display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
     }
 
     nav ul {
