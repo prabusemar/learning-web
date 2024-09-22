@@ -18,7 +18,7 @@ html, body {
     font-family: 'Open Sans', sans-serif;
 }
 
-#home{
+#home {
     margin-bottom: 100px;
 }
 
@@ -135,7 +135,6 @@ a.tbl-ungu {
     color: white;
     cursor: pointer;
     font-weight: bold;
-    
 }
 
 a.tbl-ungu:hover {
@@ -177,12 +176,40 @@ a.tbl-ungu:hover {
     border-radius: 50%;
 }
 
-.kartu-tutor p {
+.kartu-tutor p.nama-tutor {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 800;
     font-size: 20px;
     text-align: center;
     color: #411530;
+    margin-bottom: 5px; /* Menambahkan margin bawah untuk memberi jarak ke posisi */
+}
+
+.kartu-tutor p.posisi-tutor {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #D1512D; /* Warna berbeda untuk posisi */
+    text-align: center;
+    margin-bottom: 3px; /* Jarak kecil antara posisi dan kompetensi */
+}
+
+.kartu-tutor p.kompetensi-tutor {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #888; /* Warna lebih redup untuk kompetensi */
+    text-align: center;
+    margin-bottom: 15px; /* Jarak lebih besar untuk pemisahan visual */
+}
+
+.nama-perusahaan {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px; /* Memberikan padding bawah agar lebih rapi */
+    padding-bottom: 10px; /* Tambahkan padding bawah untuk jarak */
 }
 
 .section-divider {
@@ -370,7 +397,6 @@ h3 {
     padding: 0;
 }
 
-
 /* Responsive Design */
 
 @media only screen and (max-width: 1200px) {
@@ -453,8 +479,6 @@ h3 {
         padding: 10px 12px;
     }
 
-    /* Optional: Aktifkan menu hamburger jika diperlukan */
-    
     .hamburger {
         display: flex;
     }
@@ -608,7 +632,6 @@ h3 {
         width: 75%; /* Ensure the image takes up the full width of the card */
     }
 }
-
 
 @media only screen and (max-width: 480px) {
     .logo a {
